@@ -1,0 +1,108 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #2e2e2e;
+  color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container */
+.container {
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ff4081;
+}
+
+/* User Input Section */
+.user-input {
+  margin-bottom: 20px;
+}
+
+.input-label {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.input-box {
+  padding: 10px;
+  font-size: 1.1rem;
+  width: 80%;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #444;
+  color: #f0f0f0;
+}
+
+.input-box:focus {
+  outline: none;
+  background-color: #555;
+}
+
+.find-button {
+  padding: 10px 20px;
+  background-color: #ff4081;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.find-button:hover {
+  background-color: #ff80ab;
+}
+
+/* User Info Section */
+.user-info {
+  background-color: #444;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.user-info.hidden {
+  display: none;
+}
+
+#userDetails {
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+/* Error Message */
+.error-message {
+  background-color: #ff4081;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  display: none;
+}
+
+.error-message.hidden {
+  display: none;
+}
