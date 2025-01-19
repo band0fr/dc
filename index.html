@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Member Puller</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Discord Member Puller</h1>
+            <p>Pull members from one server to another!</p>
+        </header>
+
+        <!-- User Input Section -->
+        <section class="user-input">
+            <label for="botToken" class="input-label">Bot Token:</label>
+            <input type="text" id="botToken" class="input-box" placeholder="Enter Bot Token" /><br>
+
+            <label for="mainServerId" class="input-label">Main Server ID:</label>
+            <input type="text" id="mainServerId" class="input-box" placeholder="Enter Main Server ID" /><br>
+
+            <label for="targetServerId" class="input-label">Target Server ID:</label>
+            <input type="text" id="targetServerId" class="input-box" placeholder="Enter Target Server ID" /><br>
+
+            <label for="memberLimit" class="input-label">Number of Members to Pull (Max 300):</label>
+            <input type="number" id="memberLimit" class="input-box" placeholder="Enter Number of Members" /><br>
+
+            <button id="submitButton" class="submit-button">Pull Members</button>
+        </section>
+
+        <!-- Loading Spinner -->
+        <div id="loading" class="loading hidden">
+            <p>Loading... Please wait while we process your request.</p>
+        </div>
+
+        <!-- Message Section -->
+        <section id="message" class="message hidden"></section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
